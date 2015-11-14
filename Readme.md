@@ -1,6 +1,6 @@
-# Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Артур Кайтмазов](https://htmlacademy.ru/profile/id54948).
+* Студент: [Неопознанный Енот](https://htmlacademy.ru/profile/id54948).
 * Наставник: [Константин Барабаш](https://htmlacademy.ru/profile/id37967).
 
 ### Немного о себе
