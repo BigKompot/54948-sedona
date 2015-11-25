@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона__Форма</title>
+</head>
+<body>
+  <header>
+    <ul class="menu">
+      <li class="menu__item"><a href="#">Информация</a></li>
+      <li class="menu__item"><a href="#">Оставить отзыв</a></li>
+      <li class="menu__item"><a href="#">Блог шерифа</a></li>
+      <li class="menu__item"><a href="#">Гостиницы</a></li>
+    </ul>
+    <div class="logo-line">
+      <img src="#" alt="Sedona_logo" class="logo">
+      <a href="#" class="menu-btn"><img src="" alt="Menu button"></a>
+    </div>
+  </header>
+  <div class="form-welcome">
+    <img src="" alt="Sedona" class="form-welcome__sedona">
+  </div>
+  <div class="recall-request">
+    <h1>Оставьте свой отзыв!</h1>
+    <p>Помогите нашим отлелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  </div>
+  <form action="#" method="post" class="name-request">
+    <h1>Представьтесь, пожалуйста:</h1>
+    <label for="family">Фамилия: <span class="required-asterisk">*</span></label>
+    <input type="text" name="family" id="family" placeholder="Иванов" required>
+    <label for="name">Имя: <span class="required-asterisk">*</span></label>
+    <input type="text" name="name" id="name" placeholder="Петр" required>
+    <label for="patronymic">Отчество:</label>
+    <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+  </form>
+  <form action="#" method="post" class="opinion-request">
+    <h1>Ваше общее впечатление:</h1>
+    <input type="radio" name="positive" id="positive" checked>
+    <label for="positive">Скорее положительное</label>
+    <input type="radio" name="negative" id="negative">
+    <label for="negative">Скорее отрицательное</label>
+  </form>
+  <form action="#" method="post" class="dates-request">
+    <h1>Даты вашей поездки:</h1>
+    <label for="arrival-date">Дата приезда: <span class="required-asterisk">*</span></label>
+    <input type="text" name="arrival-date" id="arrival-date" placeholder="4 июля 2015">
+    <label for="staying-duration">Длительность пребывания: <span class="required-asterisk">*</span></label>
+    <div class="duration-counter">
+      <i class="icon-minus"></i><output name="staying-duration">14</output><span>дн.</span><i class="icon-plus"></i>
+    </div>
+    <label for="departure-date">Дата отъезда: <span class="required-asterisk">*</span></label>
+    <input type="text" name="departure-date" id="departure-date" placeholder="28 июля 2015">
+  </form>
+  <form action="#" method="post" class="travellers-request">
+    <h1>Кол-во путешественников: </h1>
+    <label for="travellers-number">Количество путешественников: <span class="required-asterisk">*</span></label>
+    <div class="travellers-counter">
+      <i class="icon-minus"></i><output name="travellers-number">2</output><span>чел.</span><i class="icon-plus"></i>
+    </div>
+    <div class="travellers-data">
+      <span class="travellers-data__numbering">№</span>
+      <label for="traveller-family">Фамилия: <span class="required-asterisk">*</span></label>
+      <span class="travellers-data__number">1</span>
+      <input type="text" name="traveller-family" id="traveller-family" placeholder="Иванов">
+      <label for="traveller-name">Имя: <span class="required-asterisk">*</span></label>
+      <input type="text" name="traveller-name" id="traveller-name" placeholder="Пётр">
+      <label for="traveller-patron">Отчество:</label>
+      <input type="text" name="traveller-patron" id="traveller-patron" placeholder="Александрович">
+    </div>
+    <div class="travellers-data">
+    <span class="travellers-data__numbering">№</span>
+    <label for="traveller-family">Фамилия: <span class="required-asterisk">*</span></label>
+    <span class="travellers-data__number">2</span>
+    <input type="text" name="traveller-family" id="traveller-family" placeholder="Иванов">
+    <label for="traveller-name">Имя: <span class="required-asterisk">*</span></label>
+    <input type="text" name="traveller-name" id="traveller-name" placeholder="Пётр">
+    <label for="traveller-patron">Отчество:</label>
+    <input type="text" name="traveller-patron" id="traveller-patron" placeholder="Александрович">
+    </div>
+  </form>
+  <form action="#" method="post" class="lions-request">
+    <h1>Посещенные достопримечательности:</h1>
+    <input type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+    <label for="devils-bridge">Мост Дьявола</label>
+    <input type="checkbox" name="slide-park" id="slide-park">
+    <label for="slide-park">Слайд-парк</label>
+    <input type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+    <label for="bell-mountain">Гора-Колокол</label>
+    <input type="checkbox" name="red-rocks" id="red-rocks" checked>
+    <label for="red-rocks">Красные скалы</label>
+  </form>
+  <div class="negative-alert">
+    <h1>Что-то пошло не так!</h1>
+    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <a href="#" class="negative-alert__btn">OK</a>
+  </div>
+  <div class="photo-upload">
+    <h1>Загрузите фотографии:</h1>
+    <label for="photo-upload__choice">Выбрать фотографии
+      <input type="file" name="photo-upload__choice" id="photo-upload__choice">
+    </label>
+    <div class="photo-selection">
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+      <div class="photo-selection-item">
+        <img src="" alt="">
+        <a href="" class="photo-selection-item__close-btn"><img src="" alt=""></a>
+      </div>
+    </div>
+    <input type="submit" value="Отправить отзыв">
+  </div>
+  <div class="positive-alert">
+    <h1>Ваш отзыв отправлен!</h1>
+    <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <div class="positive-alert__btn-area">
+      <a href="#" class="positive-alert__btn">закрыть окно</a>
+    </div>
+  </div>
+  <footer>
+    <h1 class="hashtag">#VISITSEDONA</h1>
+    <ul class="social-block">
+      <li class="social-block__item"><a href="#"><i></i></a></li>
+      <li class="social-block__item"><a href="#"><i></i></a></li>
+      <li class="social-block__item"><a href="#"><i></i></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
